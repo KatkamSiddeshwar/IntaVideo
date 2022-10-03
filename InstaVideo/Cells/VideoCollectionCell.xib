@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCollectionCell" customModule="InstaVideo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="276"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsJ-ei-MDs">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="276"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-Av-jtR">
+                                <rect key="frame" x="0.0" y="0.0" width="301" height="276"/>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HRZ-IP-THg">
+                                <rect key="frame" x="115.66666666666669" y="103" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Em2-M5-9GH"/>
+                                    <constraint firstAttribute="width" constant="70" id="hSm-si-xim"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="pause"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="kOV-Av-jtR" secondAttribute="bottom" id="17g-jb-vhw"/>
+                            <constraint firstAttribute="trailing" secondItem="kOV-Av-jtR" secondAttribute="trailing" id="A4j-yD-LNN"/>
+                            <constraint firstItem="HRZ-IP-THg" firstAttribute="centerY" secondItem="JsJ-ei-MDs" secondAttribute="centerY" id="KtN-3f-WdH"/>
+                            <constraint firstItem="kOV-Av-jtR" firstAttribute="top" secondItem="JsJ-ei-MDs" secondAttribute="top" id="KzX-ka-Xar"/>
+                            <constraint firstItem="HRZ-IP-THg" firstAttribute="centerX" secondItem="JsJ-ei-MDs" secondAttribute="centerX" id="Laj-6y-nHM"/>
+                            <constraint firstItem="kOV-Av-jtR" firstAttribute="leading" secondItem="JsJ-ei-MDs" secondAttribute="leading" id="T2Q-vc-umh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JsJ-ei-MDs" secondAttribute="trailing" id="Oqu-XZ-Uc1"/>
+                <constraint firstAttribute="bottom" secondItem="JsJ-ei-MDs" secondAttribute="bottom" id="RP1-Gd-iwi"/>
+                <constraint firstItem="JsJ-ei-MDs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YaX-QE-iYY"/>
+                <constraint firstItem="JsJ-ei-MDs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jiB-Ew-Rmy"/>
+            </constraints>
+            <size key="customSize" width="301" height="276"/>
+            <connections>
+                <outlet property="pauseButton" destination="HRZ-IP-THg" id="FNB-L4-LMP"/>
+                <outlet property="videoView" destination="kOV-Av-jtR" id="l1c-fD-bk6"/>
+            </connections>
+            <point key="canvasLocation" x="328.46153846153845" y="100.94786729857819"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pause" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
